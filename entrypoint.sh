@@ -2,6 +2,8 @@
 
 vncserver
 
-DISPLAY=:1 ./ApacheDirectoryStudio/ApacheDirectoryStudio
+if [ "$#" -eq 0 ]; then
+  DISPLAY=:1 ./ApacheDirectoryStudio/ApacheDirectoryStudio
+fi
 
 exec "$@"
