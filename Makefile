@@ -6,3 +6,7 @@ download: apache-directory-studio.tar.gz
 
 apache-directory-studio.tar.gz:
 	wget http://apache.mindstudios.com/directory/studio/2.0.0.v20170904-M13/ApacheDirectoryStudio-2.0.0.v20170904-M13-linux.gtk.x86_64.tar.gz -O apache-directory-studio.tar.gz
+
+push:
+	docker build -t brmzkw/apache-directory-studio .
+	docker push brmzkw/apache-directory-studio
