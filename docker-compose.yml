@@ -1,0 +1,14 @@
+version: '2'
+
+volumes:
+  apache-directory-studio: {}
+
+
+services:
+  apache-directory-studio:
+    container_name: 'apache-directory-studio'
+    build: '.'
+    volumes:
+      - "apache-directory-studio:/root/.ApacheDirectoryStudio"
+    ports:
+      - '127.0.0.1:5901:5901'
